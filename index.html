@@ -79,12 +79,12 @@
 								}
 		
 								if(is_shake != -1){
-									document.getElementById("wms").innerHTML = "<img src=\"working.gif\" width = \"200\"/>";
+									document.getElementById("wms").innerHTML = "<img src=\"working.gif\" width = 25%/>";
 									document.getElementById("acc_x").innerHTML = response[0]['acc_x'];
 									document.getElementById("acc_y").innerHTML = response[0]['acc_y'];
 									document.getElementById("acc_z").innerHTML = response[0]['acc_z'];
 								}else{
-									document.getElementById("wms").innerHTML = "<img src=\"idle.gif\" width = \"200\"/>";
+									document.getElementById("wms").innerHTML = "<img src=\"idle.gif\" width = 25%/>";
 									document.getElementById("acc_x").innerHTML = "NULL";
 									document.getElementById("acc_y").innerHTML = "NULL";
 									document.getElementById("acc_z").innerHTML = "NULL";
@@ -94,7 +94,7 @@
 									document.getElementById("acc_x").innerHTML = "No data";
 									document.getElementById("acc_y").innerHTML = "No data";
 									document.getElementById("acc_z").innerHTML = "No data";
-									document.getElementById("wms").innerHTML = "<img src=\"idle.gif\" width = \"200\"/>";
+									document.getElementById("wms").innerHTML = "<img src=\"idle.gif\" width = 25%/>";
 							}
 							delete response;
 						},
