@@ -4,34 +4,48 @@
 	<head>
 		<title> Washing Machine</title>
 		<link href="xiba.ico" rel="SHORTCUT ICON">
-		<meta charset="utf-8">
+		<meta charset="utf-8">	
 	</head>
 
 
-	<body>
-
-		<h1>【碩齋】洗衣場右手邊第一台洗衣機</h1>
+	<body bgcolor = "#afeeee">
+		<font face="微軟正黑體">
+			<h1 align="center">【碩齋】洗衣場右手邊第一台洗衣機</h1>
 		
+			<div align="center">
+    			<h2> Washing Machine Status: </h2>
+				<p id="wms">Washing Machine Status</p>
+				
+				<p id="TIME"> TIME </p>
+			</div>
+		</font>
+<!--
 		<div>
-    		<h2> Washing Machine Status: </h2>
-			<p id="wms">Washing Machine Status</p>
-		</div>
-
-		<div>
-			<h2> 資料更新時間 </h2>
-			<p id="TIME">當前時間</p>
-		</div>
-		<div>
-			<h2> X value: </h2>
+			<h4> X value: </h4>
 			<p id="acc_x">x value</p>
 		</div>
 		<div>
-    		<h2> Y value: </h2>
+    		<h4> Y value: </h4>
 			<p id="acc_y">y value</p>
 		</div>
 		<div>
-    		<h2> Z value: </h2>
+    		<h4> Z value: </h4>
 			<p id="acc_z">z value</p>
+		</div>
+-->
+		<div>
+			<table style="width:20%" border = "0" bgcolor = "white" align="right">
+  				<tr>
+    				<th>X</th>
+    				<th>Y</th> 
+    				<th>Z</th>
+  				</tr>
+ 				<tr align="center">
+					<td id = "acc_x"> x </td>
+					<td id = "acc_y"> y </td>
+					<td id = "acc_z"> z </td>
+				</tr>
+			</table>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/JavaScript">
@@ -53,7 +67,7 @@
 						success: function(response) {
 							console.log(response);
 							//data_array = response;
-							document.getElementById("TIME").innerHTML = curDate + " " + curTime;
+							document.getElementById("TIME").innerHTML = "資料更新時間: " + curDate + " " + curTime;
 							if(response.length != 0){
 								var len = response.length;
 								var is_shake = -1;
