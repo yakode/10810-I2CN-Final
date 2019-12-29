@@ -1,0 +1,16 @@
+#context{
+	background: rgb(186,159,130);
+	border: 50px solid rgb(186,159,130);
+	width: 40%;
+	height: 50%;
+	margin: 0px auto;
+}
+
+#paper{
+	background: rgb(225,207,187);
+	border: 50px solid rgb(225,207,187);
+	width: 60%;
+	height: 70%;
+	margin: 0px auto;
+
+}
